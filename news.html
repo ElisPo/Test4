@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Novità</title>
+    <meta name="newport" content="width=device-width"/>
+    <link rel = "stylesheet" href="stiliFilm.css" type = "text/css"/>
+
+    <script src="script.js">
+    </script>
+</head>
+
+<body>
+    
+    <header class = "blackbox">
+        <div>
+            <h1 class = "suUnaRiga" style = "text-align:left"> Pulp Fiction </h1>
+            <nav style=  "float:right;">
+                <button class="speciale"><a href="homepage.html">&nbsp;&#9750; Home&nbsp;</a></button>
+                <a href="schedaTecnica.html">&nbsp;Scheda Tecnica &nbsp;</a>
+                <a  href="attori.html">&nbsp;Cast &nbsp;</a>
+                <a  href="news.html">&nbsp;Novità &nbsp;</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intermezzo" style= "height: 120px;"><br>Novità. </section>
+
+    <section class="blackbox" style="height:200px">
+        <h1>Vuoi restere sempre aggiornato per conoscere eventi, cuoriosità e molto altro? <br>Iscriviti alla nostra newsletter!</h1>
+        <br>
+        <form onsubmit ="return false" style="text-align: center;">
+            <label>Nickname identificativo:
+                <input type="text" id="nomeUtente" onchange="change()">
+            </label>
+            <input type="submit" onclick="save()" id = "subscribe" disabled value ="Iscriviti!"/>
+            <input type="submit" onclick="deleteAll()" id="unsubscribe" disabled value ="Disicriviti"/>
+        </form>
+
+    </section>
+
+
+    <section style = "height: 80px; visibility:hidden"></section>
+    <footer class="blackbox" style="text-align: right; font-weight: bold;">Made by Elisa Posani. &hearts;</footer>
+</body>
